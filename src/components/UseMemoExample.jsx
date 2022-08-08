@@ -14,7 +14,7 @@ function useMemoExample() {
   })
 
   const onClick = () => {
-    setInc((prevState) => {
+    setInc(prevState => {
       console.log(prevState + 1)
       return prevState + 1
     })
@@ -25,7 +25,7 @@ function useMemoExample() {
       <input
         type='number'
         value={number}
-        onChange={(e) => setNumber(e.target.value)}
+        onChange={e => setNumber(e.target.value)}
         className='form-control w-25'
       />
 
